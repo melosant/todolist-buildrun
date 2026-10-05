@@ -9,6 +9,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*
+Controller da TodoList, orquestrando as requisições.
+- listar tasks, criar, deletar, atualizar e limpar tasks.
+@RestController -> indicar que a classe é uma controller
+@RequestMapping -> define um path base para a url
+@GetMapping, @PostMapping, @PutMapping, @DeleteMapping -> annotations dos métodos http
+@RequestBody -> indicar que há corpo na requisição
+@PathVariable -> indica que a variável está na url
+*/
 @RestController
 @RequestMapping("/tasks")
 public class TodoListController {
